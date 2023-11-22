@@ -67,7 +67,7 @@ a:hover {
 }
 
 .menu{
-       padding-top: 1px ;
+    padding-top: 1px ;
     padding-bottom: 50px;
     border-radius: 20px; 
 }
@@ -138,7 +138,7 @@ a:hover {
     column-count: 3;
     column-gap: 40px;
     font-family: 'Poppins', sans-serif;
-        font-weight: bolder;
+    font-weight: bolder;
     color: #ffffff;
     background-color: #ffffff44;
     font-weight: bolder;
@@ -148,28 +148,44 @@ a:hover {
 /* Au dessus le CSS pour la page ma_passion.html */
 
 .profil{
-    display: flex;
+    display: block;
 }
 
 .section3{
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 
 }
 
 .section4, .section6{
-    padding: 50px;
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder ;
     font-size: large;
-}
 
+}
+.section4{
+    padding: 50px;
+    background-color: #ffffff44;
+    border-radius: 50px; 
+    margin-top: 10px;
+
+}
+.section5{
+    padding: 30px;
+    background-color: rgba(255,212,148,0.3);
+    border-radius: 50px; 
+    margin-top: 10px;
+
+}
 .anglais{
-    padding-left: 50px;
-    padding-top: 0.2px;
+    padding-right: 50px;
+    padding-top: -5px;
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     color: rgb(255, 212, 148);
+    text-align: right;
+    
 }
 
 h2, h3, h4{
@@ -191,27 +207,6 @@ h3{
 .section6{
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Au dessus le CSS pour la page mon_profil.html */
 
