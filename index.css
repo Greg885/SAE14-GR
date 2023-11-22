@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
 @keyframes lien {
     0%   { font-size: x-large;}
     50%  { font-size: large;}
     100% { font-size: x-large;}
   }
+
+@keyframes cita {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      25%, 75% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      50% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    }
+
 
 #fond{
     height : 100vh;
@@ -14,6 +31,15 @@
     z-index: -10;
 }
 
+.cita{
+    font-family: 'Bigshot One', serif;
+    animation: cita 30s ease-out forwards infinite;
+    font-size: xx-large;
+}
+
+.txt{
+    font-size: x-large ;
+}
 
 .menu{
    
@@ -55,7 +81,7 @@ a {
 }
 
 a:hover {
-    animation: lien 3s infinite; 
+    animation: lien 2s; 
     text-decoration: underline; 
     text-decoration: none;    
 }
@@ -83,11 +109,11 @@ a:hover {
     font-weight: bolder ;
     padding: 20px;
     border-radius: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 footer{
-    margin-top: 5px;
+    margin-top: 1px;
     padding-bottom: 20px ; 
     padding-top: 20px ; 
     padding-right: 20px ; 
