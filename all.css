@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@keyframes lien {
+    0%   { font-size: x-large;}
+    50%  { font-size: large;}
+    100% { font-size: x-large;}
+  }
+
+#fond{
+    height : 100vh;
+    width : 100vw;
+    position : fixed;
+    top:0px;
+    left : 0px;
+    z-index: -10;
+}
+
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center ;
+    font-size:  50px;;
+    color :rgb(255, 255, 255);
+
+    
+}
+
+.lien{
+    text-align: center;
+    font-size: 25px;    
+}
+
+.back_lien{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    background-color: #ffffff44; 
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px; 
+}
+
+
+a {
+    font-family: 'Poppins', sans-serif;
+        color: #ffffffbb; 
+    text-decoration: none;  
+}
+
+a:hover {
+    animation: lien 1.25s linear; 
+    text-decoration: underline; 
+    text-decoration: none;    
+}
+
+/* Au dessus les bases pour l'ensemble des pages (police,animation,liens...)*/
+
+.cita{
+    font-family: 'Calligraffitti', cursive;
+    font-size: xx-large;
+}
+
+.txt{
+    font-size: x-large ;
+}
+
+.menu{
+       padding-top: 1px ;
+    padding-bottom: 50px;
+    border-radius: 20px; 
+}
+
+
+.sursection{
+    display: flex;
+    justify-content:baseline;
+    align-items:baseline;
+    text-align: center;
+    height: 100%;
+    margin-top: 5px;
+    border-radius: 20px; 
+    padding: 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.para{
+    text-align: center;
+    color: white;
+    background-color: #ffffff44;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder ;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.logolien{
+    margin: 10px;
+}
+
+/* Au dessus le CSS pour la page index.html */
+
+
+
+.album{
+    margin-top: 50px;
+    text-align: center;              
+}
+.img{
+    display: inline-block;      
+    border-radius: 10%;
+}
+.adulte, .enfant, .bebe{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder ;
+    font-size: large;
+}
+
+/* Au dessus le CSS pour la page mon_album.html */
+
+.section2{
+    text-align: center;
+}
+
+.passion{
+    text-align: justify;
+    margin-top: 50px;
+    padding: 20px 30px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    column-count: 3;
+    column-gap: 40px;
+    font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    color: #ffffff;
+    background-color: #ffffff44;
+    font-weight: bolder;
+    font-size:larger;  
+}
+
+/* Au dessus le CSS pour la page ma_passion.html */
+
+.profil{
+    display: flex;
+}
+
+.section3{
+    padding: 20px;
+
+}
+
+.section4, .section6{
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder ;
+    font-size: large;
+}
+
+.anglais{
+    padding-left: 50px;
+    padding-top: 0.2px;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    color: rgb(255, 212, 148);
+}
+
+h2, h3, h4{
+    font-weight: bolder;
+}
+
+h2{
+    font-size: xx-large;
+}
+h4{
+    text-decoration: underline double;
+}
+h3{
+    color: rgb(126, 141, 206);
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.section6{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Au dessus le CSS pour la page mon_profil.html */
+
+
+footer{
+    margin-top: 1px;
+    padding-bottom: 20px ; 
+    padding-top: 20px ; 
+    padding-right: 20px ; 
+    padding-left: 20px ; 
+
+    text-align: center;
+    border-radius: 20px; 
+    color: #ffffff;
+    
+}
+
