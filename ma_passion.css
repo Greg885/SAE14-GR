@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@keyframes lien {
+    0%   { font-size: x-large;}
+    50%  { font-size: large;}
+    100% { font-size: x-large;}
+  }
+
+
+body{
+    background-image: url(arriere-plan.jpg);
+    background-size: cover;
+}
+
+.menu{
+    background-color: #000000;
+    padding-top: 1px ;
+    padding-bottom: 50px;
+    border-radius: 20px; 
+    
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 50%;
+    text-align: center ;
+    font-size:  50px;;
+    color :rgb(255, 255, 255)
+}
+
+.lien{
+    text-align: center;
+    font-size: 25px;    
+}
+
+.back_lien{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    background-color: #ffffff44; 
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px; 
+}
+
+
+a {
+    font-family: 'Indie Flower', cursive;
+    color: #ffffffbb; 
+    text-decoration: none;  
+}
+
+a:hover {
+    animation: lien 3s infinite; 
+    text-decoration: underline; 
+    text-decoration: none;    
+}
+
+.section2{
+    text-align: center;
+}
+
+.img{
+    display: inline-block; 
+    margin: 5px; 
+    max-width: 100%; 
+    border-radius: 10%;
+}
+
+p{
+    text-align: justify;
+    margin-top: 50px;
+    padding: 20px 30px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    column-count: 3;
+    column-gap: 40px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #ffffff44;
+    font-weight: bolder;
+    font-size:larger;  
+}
