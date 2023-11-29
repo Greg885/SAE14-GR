@@ -30,22 +30,36 @@ h1{
 .lien{
     text-align: center;
     font-size: 25px;    
+
 }
 
 .back_lien{
     display: inline-block;
+    align-items: center;
     padding: 10px 20px;
     border-radius: 20px; 
     background-color: #ffffff44; 
     font-weight: bold;
     text-decoration: none;
-    margin: 10px; 
+    
+}
+
+.lien_ang{
+    margin-left: 75%;
+    display: inline-block;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    background-color: #ffffff44; 
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 
 a {
     font-family: 'Poppins', sans-serif;
-        color: #ffffffbb; 
+    color: #ffffffbb; 
     text-decoration: none;  
 }
 
@@ -53,6 +67,13 @@ a:hover {
     animation: lien 1.25s linear; 
     text-decoration: underline; 
     text-decoration: none;    
+   
+}
+
+a:hover:not(.back_lien) {
+    animation: none;
+    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Au dessus les bases pour l'ensemble des pages (police,animation,liens...)*/
@@ -206,21 +227,24 @@ h3{
 
 .section6{
     text-align: center;
+    background-color: rgba(94, 134, 172, 0.459);
+    border-radius: 50px; 
+    padding: 1%;
+    margin-top: 10px;
 }
 
 /* Au dessus le CSS pour la page mon_profil.html */
 
-
 footer{
-    margin-top: 1px;
-    padding-bottom: 20px ; 
-    padding-top: 20px ; 
-    padding-right: 20px ; 
-    padding-left: 20px ; 
-
+    display: block;
+    margin-top: 50px;   
     text-align: center;
-    border-radius: 20px; 
-    color: #ffffff;
+
+}
+.footer_lien{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
     
 }
 
