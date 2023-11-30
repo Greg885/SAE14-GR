@@ -1,61 +1,131 @@
+/* Importation des polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Animation */
 @keyframes lien {
     0%   { font-size: x-large;}
     50%  { font-size: large;}
     100% { font-size: x-large;}
-  }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp2 {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInSect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
-#fond{
-    height : 100vh;
-    width : 100vw;
-    position : fixed;
-    top:0px;
-    left : 0px;
+
+/* Fond */
+#fond {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     z-index: -10;
 }
 
-
-h1{
+/* Styles généraux */
+h1 {
+    animation: fadeInDown 2s ease-in-out;
     font-family: 'Poppins', sans-serif;
-    font-size: xx-large;
-    text-align: center ;
-    font-size:  50px;;
-    color :rgb(255, 255, 255);
-
-    
-}
-
-.lien{
     text-align: center;
-    font-size: 25px;    
-
+    font-size: 50px;
+    color: rgb(255, 255, 255);
 }
 
-.back_lien{
+.lien {
+    text-align: center;
+    font-size: 25px;
+    animation: fadeInUp 1s ease-in-out;  
+}
+
+.back_lien {
     display: inline-block;
     align-items: center;
     padding: 10px 20px;
     border-radius: 20px; 
     background-color: #ffffff44; 
     font-weight: bold;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
-.lien_ang{
-    margin-left: 75%;
-    display: inline-block;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 20px; 
-    background-color: #ffffff44; 
-    font-weight: bold;
-    text-decoration: none;
-    margin-bottom: 10px;
+footer {
+    display: flex;
+    margin-top: 20px;   
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+.contact {
+    background-color: rgba(20, 43, 145, 0.478);
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: auto;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.image_ang {
+    border-radius: 25%;
+    width: 50px;
+    height: 40px;
+    margin-top: 50px ;
+}
+
+.txt_footer {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    padding: 1px;
+    margin: 10px;
+}
 
 a {
     font-family: 'Poppins', sans-serif;
@@ -67,7 +137,6 @@ a:hover {
     animation: lien 1.25s linear; 
     text-decoration: underline; 
     text-decoration: none;    
-   
 }
 
 a:hover:not(.back_lien) {
@@ -76,28 +145,28 @@ a:hover:not(.back_lien) {
     text-decoration: none;
 }
 
-/* Au dessus les bases pour l'ensemble des pages (police,animation,liens...)*/
-
-.cita{
+/* Styles de base pour l'ensemble des pages (police, animation, liens...) */
+.cita {
     font-family: 'Calligraffitti', cursive;
     font-size: xx-large;
+    animation: fadeInSect 3s ease-in-out;
+
 }
 
-.txt{
+.txt {
     font-size: x-large ;
 }
 
-.menu{
+.menu {
     padding-top: 1px ;
     padding-bottom: 50px;
     border-radius: 20px; 
 }
 
-
-.sursection{
+.sursection {
     display: flex;
-    justify-content:baseline;
-    align-items:baseline;
+    justify-content: baseline;
+    align-items: baseline;
     text-align: center;
     height: 100%;
     margin-top: 5px;
@@ -106,9 +175,7 @@ a:hover:not(.back_lien) {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-.para{
+.para {
     text-align: center;
     color: white;
     background-color: #ffffff44;
@@ -119,36 +186,37 @@ a:hover:not(.back_lien) {
     margin-bottom: 10px;
 }
 
-.logolien{
+.logolien {
     margin: 10px;
 }
 
-/* Au dessus le CSS pour la page index.html */
-
-
-
-.album{
+/* Styles pour la page index.html */
+.album {
     margin-top: 50px;
     text-align: center;              
 }
-.img{
+
+.img {
+    margin-top: 20px;
     display: inline-block;      
     border-radius: 10%;
+    animation: fadeInDown 2s ease-in-out;
+
 }
-.adulte, .enfant, .bebe{
+
+.adulte, .enfant, .bebe {
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder ;
     font-size: large;
 }
 
-/* Au dessus le CSS pour la page mon_album.html */
-
-.section2{
+/* Styles pour la page mon_album.html */
+.section2 {
     text-align: center;
 }
 
-.passion{
+.passion {
     text-align: justify;
     margin-top: 50px;
     padding: 20px 30px; 
@@ -163,69 +231,68 @@ a:hover:not(.back_lien) {
     color: #ffffff;
     background-color: #ffffff44;
     font-weight: bolder;
-    font-size:larger;  
+    font-size: larger;  
 }
 
-/* Au dessus le CSS pour la page ma_passion.html */
-
-.profil{
+/* Styles pour la page ma_passion.html */
+.profil {
     display: block;
 }
 
-.section3{
+.section3 {
     padding: 10px;
     text-align: center;
-
 }
 
-.section4, .section6{
+.section4, .section6 {
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder ;
     font-size: large;
-
 }
-.section4{
+
+.section4 {
     padding: 50px;
     background-color: #ffffff44;
     border-radius: 50px; 
     margin-top: 10px;
-
 }
-.section5{
+
+.section5 {
     padding: 30px;
-    background-color: rgba(255,212,148,0.3);
+    background-color: rgba(255, 212, 148, 0.3);
     border-radius: 50px; 
     margin-top: 10px;
-
 }
-.anglais{
+
+.anglais {
     padding-right: 50px;
     padding-top: -5px;
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     color: rgb(255, 212, 148);
     text-align: right;
-    
 }
 
-h2, h3, h4{
+h2, h3, h4 {
     font-weight: bolder;
 }
 
-h2{
+h2 {
     font-size: xx-large;
 }
-h4{
+
+h4 {
     text-decoration: underline double;
 }
-h3{
+
+h3 {
     color: rgb(126, 141, 206);
     font-size: xx-large;
     text-decoration: underline;
 }
 
-.section6{
+.section6 {
     text-align: center;
     background-color: rgba(94, 134, 172, 0.459);
     border-radius: 50px; 
@@ -233,18 +300,4 @@ h3{
     margin-top: 10px;
 }
 
-/* Au dessus le CSS pour la page mon_profil.html */
-
-footer{
-    display: block;
-    margin-top: 50px;   
-    text-align: center;
-
-}
-.footer_lien{
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    
-}
-
+/* Styles pour la page mon_profil.html */
