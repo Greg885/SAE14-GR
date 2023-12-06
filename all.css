@@ -81,7 +81,6 @@ h1 {
 .lien {
     text-align: center;
     font-size: 25px;
-    animation: fadeInUp 1s ease-in-out;  
 }
 
 .back_lien {
@@ -217,7 +216,7 @@ a:hover:not(.back_lien) {
 }
 
 .passion {
-    text-align:center;
+    text-align:start;
     padding: 20px 30px; 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
